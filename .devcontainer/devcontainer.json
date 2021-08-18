@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.191.1/containers/java
 {
 	"name": "Java",
-	"build": {
+	"build": {	
 		"dockerfile": "Dockerfile",
 		"args": {
 			// Update the VARIANT arg to pick a Java version: 11, 16
@@ -24,9 +24,6 @@
 		"vscjava.vscode-java-pack"
 	],
 
-	
-	"image": "springboot", 
-
 	"workspaceFolder": "/workspace",
 	// The first is to create your remote dev container first, and then clone your source code into a named volume since this does not require you to have direct access to the filesystem on the remote host.
 	"workspaceMount": "source=remote-workspace,target=/workspace,type=volume",
@@ -41,5 +38,5 @@
 	// "postCreateCommand": "java -version",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "root"
+	"remoteUser": "docker"
 }

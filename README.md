@@ -40,6 +40,7 @@ Using SSH requires a supported SSH client, that you have key based authenticatio
 ```java
 The Language Support for Java server crashed 5 times in the last 3 minutes. The server will not be restarted.
 ```
+>install lombok for Language Support for Java   
 
 ![image](https://user-images.githubusercontent.com/5245347/129875717-5fcfa1b5-e9e3-4fdc-a2ab-a1d7cc3c83ff.png)
 

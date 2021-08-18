@@ -1,0 +1,45 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.191.1/containers/java
+{
+	"name": "Java",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			// Update the VARIANT arg to pick a Java version: 11, 16
+			"VARIANT": "11",
+			// Options
+			"INSTALL_MAVEN": "true",
+			"INSTALL_GRADLE": "false",
+			"NODE_VERSION": "lts/*"
+		}
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"java.home": "/docker-java-home"
+	},
+	
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"vscjava.vscode-java-pack"
+	],
+
+	
+	"image": "springboot", 
+
+	"workspaceFolder": "/workspace",
+	// The first is to create your remote dev container first, and then clone your source code into a named volume since this does not require you to have direct access to the filesystem on the remote host.
+	"workspaceMount": "source=remote-workspace,target=/workspace,type=volume",
+	// The second approach is to bind mount a folder on the remote machine into your container. This requires you to have access to the remote filesystem, but also allows you to work with existing source code on the remote machine.
+	// "workspaceMount": "source=/home/lorne/developer,target=/workspace,type=bind,consistency=cached",	
+	  
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "java -version",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "root"
+}

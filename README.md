@@ -2,7 +2,8 @@
 
 lorne 2021-08-18
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7934a4ae-6039-4181-b156-f6099fa52764/Untitled.png)
+![image](https://user-images.githubusercontent.com/5245347/129875365-70437e3d-1286-482e-ab12-4200dcc80a1a.png)
+
 
 # Setting remote docker ssh
 
@@ -16,16 +17,15 @@ lorne 2021-08-18
 
 Using SSH requires a supported SSH client, that you have key based authentication configured for the remote host, and that the key is imported into your local SSH agent. See the article on using SSH Keys with Git for details on configuring the agent and adding your key.
 
-[SSH证书登录（免密登录）](https://www.notion.so/SSH-77d3a6fca160472fb5b6184047baf69f) 
+![image](https://user-images.githubusercontent.com/5245347/129875629-4c791b91-bafd-4e87-bf27-73431529abaa.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f19d1fb-23a0-4568-acac-df9a73770f3e/Untitled.png)
 
 # Remote Container: Clone Repository from container volume
 
 - `F1` search :Remote Container : clone repository form container volume
 - clone git repository form url :  [https://github.com/1991wangliang/vscode-springboot.git](https://github.com/1991wangliang/vscode-springboot.git)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69a1275e-a4a9-4348-845a-96894de3bced/Untitled.png)
+![image](https://user-images.githubusercontent.com/5245347/129875662-6bb2f421-379c-481a-a559-e7173e030d22.png)
 
 - entity init project
 
@@ -33,7 +33,7 @@ Using SSH requires a supported SSH client, that you have key based authenticatio
 
 - wait docker build and project build
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9d21ac5b-aeb3-4a9e-85a8-fa4f89e59362/Untitled.png)
+![image](https://user-images.githubusercontent.com/5245347/129875693-3de61da5-af44-4985-8c67-58218bfc670f.png)
 
 - note install lombok extension with flow errors.
 
@@ -41,17 +41,18 @@ Using SSH requires a supported SSH client, that you have key based authenticatio
 The Language Support for Java server crashed 5 times in the last 3 minutes. The server will not be restarted.
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/567b36ea-579b-407d-a825-a8bba97de504/Untitled.png)
+![image](https://user-images.githubusercontent.com/5245347/129875717-5fcfa1b5-e9e3-4fdc-a2ab-a1d7cc3c83ff.png)
 
 # Run SpringBoot
 
 - run SpringBootApplication
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/01a87073-f8d0-4064-9860-ae0d9294fc82/Untitled.png)
+![image](https://user-images.githubusercontent.com/5245347/129875756-5079739c-29b0-4259-b4da-2bb985e871d9.png)
 
 - open browser see page
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4190a048-e15f-4d07-b9d0-a01cece7c8fa/Untitled.png)
+![image](https://user-images.githubusercontent.com/5245347/129875801-39d16e78-b1a0-42e8-a472-19a1b963693f.png)
+
 
 # Remote Container Dev has 2 Ways
 

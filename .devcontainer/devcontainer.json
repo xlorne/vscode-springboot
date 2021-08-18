@@ -24,9 +24,9 @@
 		"vscjava.vscode-java-pack"
 	],
 
-	"workspaceFolder": "/workspace",
+	// "workspaceFolder": "/workspace",
 	// The first is to create your remote dev container first, and then clone your source code into a named volume since this does not require you to have direct access to the filesystem on the remote host.
-	"workspaceMount": "source=remote-workspace,target=/workspace,type=volume",
+	// "workspaceMount": "source=remote-workspace,target=/workspace,type=volume",
 	// The second approach is to bind mount a folder on the remote machine into your container. This requires you to have access to the remote filesystem, but also allows you to work with existing source code on the remote machine.
 	// "workspaceMount": "source=/home/lorne/developer,target=/workspace,type=bind,consistency=cached",	
 	  

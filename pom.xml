@@ -60,6 +60,7 @@
 		</snapshots>
 	    </repository>
 	</repositories>
+	
 	<pluginRepositories>
 	    <pluginRepository>
 		<id>aliyun-plugin</id>

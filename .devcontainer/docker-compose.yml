@@ -14,7 +14,6 @@ services:
       - POSTGRES_PASSWORD=postgres
     networks: 
       - dev_network
-    command: /bin/sh -c "while sleep 1000; do :; done"
 
   app:
     build: 

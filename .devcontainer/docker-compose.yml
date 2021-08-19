@@ -12,6 +12,7 @@ services:
       POSTGRES_PASSWORD: postgres
     networks: 
           - dev_network
+    command: /bin/sh -c "while sleep 1000; do :; done"
 
   app:
     build: 
@@ -27,7 +28,7 @@ services:
     networks: 
           - dev_network
     links: 
-          - "postgres:db"           
+          - postgres:db        
     init: true
     volumes:
       # Forwards the local Docker socket to the container.

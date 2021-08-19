@@ -1,4 +1,4 @@
-# vscode-springboot
+# vscode-springboot docker-compose (postgresql + springboot-web)
 
 lorne 2021-08-18
 

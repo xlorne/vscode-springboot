@@ -27,4 +27,9 @@ services:
     depends_on:      
       - db   
     networks: 
-      - dev_network 
+      - dev_network      
+    init: true
+    volumes:
+      - ..:/workspace:cached    
+    user: vscode
+    command: sleep infinity 

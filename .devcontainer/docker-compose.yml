@@ -28,5 +28,4 @@ services:
       - db   
     networks: 
       - dev_network      
-#     init: true
     command: sleep infinity 

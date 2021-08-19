@@ -29,6 +29,6 @@ services:
     networks: 
       - dev_network      
     init: true
-    volumes:
-      - ..:/workspace:cached    
+#     volumes:
+#       - ..:/workspace:cached    
     command: sleep infinity 

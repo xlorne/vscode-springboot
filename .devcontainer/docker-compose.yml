@@ -6,10 +6,12 @@ networks:
 
 services:
   db:
-    image: postgres
+    image: postgres:9.6.23
     restart: always
     environment:
-      POSTGRES_PASSWORD: postgres
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
     networks: 
       - dev_network
     command: /bin/sh -c "while sleep 1000; do :; done"

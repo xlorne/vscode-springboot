@@ -31,4 +31,4 @@ services:
     init: true
     volumes:
       # Update this to wherever you want VS Code to mount the folder of your project
-      - ..:/workspace:cached
+      - ..:/workspace

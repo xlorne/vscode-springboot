@@ -4,19 +4,22 @@
 	"name": "Docker from Docker Compose",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	// "workspaceFolder": "/workspace",
+	"workspaceFolder": "/workspace",
 
 	// Use this environment variable if you need to bind mount your local source code into a new container.
-	// "remoteEnv": {
-	// 	"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
-	// },
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
 	
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": { 
+		"java.home": "/docker-java-home"
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ms-azuretools.vscode-docker"
+		"vscjava.vscode-java-pack",
+		"gabrielbb.vscode-lombok"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

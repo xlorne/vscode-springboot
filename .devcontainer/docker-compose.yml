@@ -1,34 +1,35 @@
 version: '3'
 
+networks:
+    dev_network:
+        name: dev_network
+
 services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    networks: 
+      - dev_network
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
   app:
     build: 
       context: .
       dockerfile: Dockerfile
-      args:
-        # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
-        USER_UID: 1000
-        USER_GID: 1000
+      args:        
+        VARIANT: 11
+        INSTALL_MAVEN: "true"
+        INSTALL_GRADLE: "false"
+        NODE_VERSION: "lts/*"
 
+    depends_on:      
+      - db   
+    networks: 
+      - dev_network      
     init: true
     volumes:
-      # Forwards the local Docker socket to the container.
-      - /var/run/docker.sock:/var/run/docker-host.sock 
       # Update this to wherever you want VS Code to mount the folder of your project
-      - ..:/workspace:cached
-
-    # Overrides default command so things don't shut down after the process ends.
-    entrypoint: /usr/local/share/docker-init.sh
-    command: sleep infinity 
-
-    # Uncomment the next four lines if you will use a ptrace-based debuggers like C++, Go, and Rust.
-    # cap_add:
-    #  - SYS_PTRACE
-    # security_opt:
-    #   - seccomp:unconfined
-
-    # Uncomment the next line to use a non-root user for all processes.
-    # user: vscode
-
-    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
-    # (Adding the "ports" property to this file will not forward from a Codespace.)
+      - ..:/workspace      
+    user: vscode

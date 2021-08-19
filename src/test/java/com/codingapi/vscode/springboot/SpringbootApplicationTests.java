@@ -1,13 +1,14 @@
-package com.example.demo;
+package com.codingapi.vscode.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class SpringbootApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }

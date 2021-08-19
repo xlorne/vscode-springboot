@@ -1,4 +1,4 @@
-package com.example.demo.contoller;
+package com.codingapi.vscode.springboot.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

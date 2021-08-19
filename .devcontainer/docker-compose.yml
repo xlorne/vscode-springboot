@@ -11,24 +11,23 @@ services:
     environment:
       POSTGRES_PASSWORD: postgres
     networks: 
-          - dev_network
+      - dev_network
     command: /bin/sh -c "while sleep 1000; do :; done"
 
   app:
     build: 
       context: .
       dockerfile: Dockerfile
-      args:
-        # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
-        USER_UID: 1000
-        USER_GID: 1000
+      args:        
+        VARIANT: 11
+        INSTALL_MAVEN: "true"
+        INSTALL_GRADLE: "false"
+        NODE_VERSION: "lts/*"
 
     depends_on:      
       - db   
     networks: 
-          - dev_network
-    links: 
-          - postgres:db        
+      - dev_network      
     init: true
     volumes:
       # Forwards the local Docker socket to the container.

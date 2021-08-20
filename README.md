@@ -2,6 +2,8 @@
 
 lorne 2021-08-18
 
+[Two Ways Of Online IDE  Style](https://fragrant-feeling-c6c.notion.site/Two-Ways-Of-Online-IDE-Style-4b6c1953f3164dba9324a76325c55941)
+
 ![image](https://user-images.githubusercontent.com/5245347/129875365-70437e3d-1286-482e-ab12-4200dcc80a1a.png)
 
 
